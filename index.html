@@ -1,49 +1,281 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <!-- Meta Tags -->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Welcome | Bravery Podcast</title>
-    <meta content="" name="description">
-    <meta content="" name="keywords">
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
 
     <!-- Favicons -->
-    <link href="assets/img/favicon.png" rel="icon">
-    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-  
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
-  
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- Vendor CSS Files -->
-    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
-    <!--
-    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet"> 
-    -->
-  
-    <!-- Template Main CSS File -->
-    <link href="assets/css/style.css" rel="stylesheet">
-</head>
-<body>
-    
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="/node_modules/owl.carousel/dist/assets/owl.carousel.min.css"
+    />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- Google Icons -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+      rel="stylesheet"
+    />
+    <!-- Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+  </head>
+  <body>
     <div class="page-wrapper">
-        <header class="menu-header">
-            <div class="page-logo">
+      <!-- Header start -->
+      <header class="menu-header">
+        <nav
+          class="page-menu navbar justify-content-around align-items-center navbar-dark"
+        >
+          <div class="page-logo mt-2">
+            <a href="/"
+              ><img
+                src="/assets/img/Mozaik.png"
+                alt="Mozaik logo"
+                width="150px"
+                height="30px"
+            /></a>
+          </div>
+          <!-- Desktop -->
+          <ul class="nav navbar-nav flex-row justify-content-around mr-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="/">Početna</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/index.html">Audio-Podkast</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/index.html">Podkast u Prirodi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/index.html">Tribine</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/index.html">Prezentacije</a>
+            </li>
+            <li class="nav-item disabled">
+              <a class="nav-link disabled" href="/index.html"
+                >Mozaik Prodavnica</a
+              >
+            </li>
+          </ul>
+          <span class="language-selector d-flex align-items-center">
+            <img
+              src="/assets/img/serb-lang.png"
+              alt="Language"
+              width="40px"
+              height="20px"
+              class="material-symbols-outlined"
+            />
+            <span class="material-symbols-outlined">expand_more</span>
+            <span class="d-none material-symbols-outlined">expand_less</span>
+          </span>
+        </nav>
+        <!-- Mobile -->
+        <nav class="navbar d-none navbar-expand-lg navbar-dark">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#"
+                  >Home <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link disabled"
+                  href="#"
+                  tabindex="-1"
+                  aria-disabled="true"
+                  >Mozaik Prodavnica</a
+                >
+              </li>
+            </ul>
+          </div>
+          <span
+            ><img
+              src="/assets/img/serb-lang.png"
+              alt="Language"
+              width="32px"
+              height="32px"
+          /></span>
+        </nav>
+      </header>
+      <!-- Header end -->
+
+      <!-- Slider section start -->
+      <section class="hero">
+        <video autoplay loop muted plays-inline class="background-video">
+            <source src="/assets/img/BRAVERY POD SPICA.mp4" type="video/mp4">
+        </video>
+        <div class="content animate__animated animate__zoomIn">
+            <h1>Organizacija Mozaik</h1>
+            <p>Dobrodosli na zvanican sajt organizacije Mozaik!</p>
+            <a href="#">Klikni za jos</a>
+        </div>
+      </section>
+      <!-- Slider section end -->
+
+      <!-- Project section start -->
+      <section class="project-container">
+        <div class="project-item">
+          <span class="material-symbols-outlined">mic</span><h3>Audio Podkast</h3>
+          <div class="project-item-footer">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+            <a href="#">Skoci do projekta <span class="material-symbols-outlined">navigate_next</span></a>
+          </div>
+          <div class="angled-img">
+            <video autoplay loop muted plays-inline>
+              <source src="/assets/img/BRAVERY POD SPICA.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+        <div class="project-item">
+          <h3>Podkast u Prirodi</h3>
+          <div class="project-item-footer">
+            <p> It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <a href="#">Skoci do projekta <span class="material-symbols-outlined">navigate_next</span></a>
+          </div>
+          <div class="angled-img">
+            <video autoplay loop muted plays-inline>
+              <source src="/assets/img/BRAVERY POD SPICA.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+        <div class="project-item">
+          <h3>Tribine</h3>
+          <div class="project-item-footer">
+            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+            <a href="#">Skoci do projekta <span class="material-symbols-outlined">navigate_next</span></a>
+          </div>
+          <div class="angled-img">
+            <div class="angled-img-wrapper">
+              <video autoplay loop muted plays-inline>
+                <source src="/assets/img/BRAVERY POD SPICA.mp4" type="video/mp4">
+              </video>
             </div>
-            <nav class="page-menu">
+          </div>
+        </div>
+        <div class="project-item">
+          <h3>Prezentacije</h3>
+          <div class="project-item-footer">
+            <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+            <a href="#">Skoci do projekta <span class="material-symbols-outlined">navigate_next</span></a>
+          </div>
+          <div class="angled-img">
+            <video autoplay loop muted plays-inline>
+              <source src="/assets/img/BRAVERY POD SPICA.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </section>
+      <!-- Project section end -->
+      <!-- Team section start -->
+      <section class="team-container">
+        <h2 class="team-title">Upoznajte naš tim eksperta</h2>
+          <div class="team-cards">
+            <div class="team-card-container">
+              <div class="team-card">
+                <div class="team-card-wrapper">
+                  <img src="/assets/img/dark_rider-cover.jpg" class="cover-image" />
+                </div>
+                <h3 class="title">Maja</h3>
+                <img src="/assets/img/maja.png" class="character"/>
+              </div>
+              <p>Art Designer</p>
+            </div>
+  
+            <div class="team-card-container">
+              <div class="team-card">
+                <div class="team-card-wrapper">
+                  <img src="/assets/img/force_mage-cover.jpg" class="cover-image" />
+                </div>
+                <h3 class="title">Anja</h3>
+                <img src="/assets/img/anja.png" class="character"/>
+              </div>
+              <p>Fitness Coach</p>
+            </div>
 
-            </nav>
-        </header>
+            <div class="team-card-container">
+              <div class="team-card">
+                <div class="team-card-wrapper">
+                  <img src="/assets/img/dark_rider-cover.jpg" class="cover-image" />
+                </div>
+                <h3 class="title">Ugljesa</h3>
+                <img src="/assets/img/anja.png" class="character"/>
+              </div>
+              <p>Software Developer</p>
+            </div>
+
+            <div class="team-card-container">
+              <div class="team-card">
+                <div class="team-card-wrapper">
+                  <img src="/assets/img/force_mage-cover.jpg" class="cover-image" />
+                </div>
+                <h3 class="title">Nikola</h3>
+                <img src="/assets/img/anja.png" class="character"/>
+              </div>
+              <p>Video Editor</p>
+            </div>
+          </div>
+      </section>
+      <!-- Team section end -->
+      <!-- Contact section start -->
+      <section class="contact-container" style="width: 100%; height: 300px; position: relative;">
+        <div class="custom-shape-divider-top-1696851244">
+          <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+              <path d="M0,0V6c0,21.6,291,111.46,741,110.26,445.39,3.6,459-88.3,459-110.26V0Z" class="shape-fill"></path>
+          </svg>
+        </div>
+      </section>
+      <!-- Contact section end -->
     </div>
-    
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
-
-</body>
+    <script 
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" 
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="/node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
